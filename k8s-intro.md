@@ -1,7 +1,7 @@
-* what is k8s? 
+# what is k8s? 
     - kubernetes is a opensource system for automating deployment , scalling, and management of containarized applications.
 
-* features of k8s:
+# features of k8s:
     - Monitoring
     - self Healing
     - High availability
@@ -12,12 +12,12 @@
     - Automatic rollout and rollback
     - secret and configuration management
 
-* k8s alaternatives:
+# k8s alaternatives:
     - docker swarm
     - mesos
 
-* k8s Architecture:
-   * Master components:
+# k8s Architecture:
+   ## Master components:
     - api server
     - etcd
     - scheduler
@@ -25,9 +25,9 @@
         - node controller
         - replication controller
         - endpoint controller   
- - cloud control manager
+    - cloud control manager
 
- * Node components:
+ ## Node components:
     - Container runtime(containerd,cri-d)
     - kube-proxy
     - kubelet
