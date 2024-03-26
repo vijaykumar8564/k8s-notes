@@ -37,3 +37,28 @@
     - Pods share certain resources like volumes. This allows for data sharing between containers within the same Pod.
 
 
+# pod creation:
+
+## pod creation using imperatively :
+    - kubectl run nginx-pod --image=nginx
+
+## pod creation using declaratively:
+* create file with nginx-pod.yaml
+
+```python
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod1
+  labels:
+    team: dev
+    app: nginx
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:latest
+      ports:
+        - containerPort: 80
+```
+* apply the manifest with kubectl:
+    - kubectl apply -f nginx-pod.yaml
